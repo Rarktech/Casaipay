@@ -24,12 +24,6 @@ export default function Team() {
               <div className="role">CTO &amp; Co-Founder</div>
               <p>Translates the vision into technology that actually works at scale.</p>
             </article>
-            <article className="member rv">
-              <img src="/img/team/alo.webp" alt="Alo Odefa" loading="lazy" width="520" height="520" />
-              <h4>Alo Odefa</h4>
-              <div className="role">Head of Research &amp; Strategy, Co-Founder</div>
-              <p>Asks the hard questions and reads the market, so we build on evidence rather than assumptions.</p>
-            </article>
           </div>
         </div>
       </section>

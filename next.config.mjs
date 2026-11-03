@@ -2,12 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  async rewrites() {
-    // the prototype is a static app served out of /public/app
-    return [{ source: '/app', destination: '/app/index.html' }];
-  },
+  // The prototype in /public/app is a plain static app whose assets are
+  // referenced relatively (css/app.css, js/store.js). Serving it at "/app"
+  // would resolve those to "/css/..." and 404, so "/app" redirects to the
+  // directory form "/app/" where the relative paths are correct.
   async redirects() {
     return [
+      { source: '/app', destination: '/app/', permanent: false },
       { source: '/demo', destination: '/app/', permanent: false },
       { source: '/merchant', destination: '/app/#/m/home', permanent: false },
     ];

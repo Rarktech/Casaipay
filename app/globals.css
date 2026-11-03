@@ -213,7 +213,7 @@ p{margin:0;line-height:1.6}
 .phase p{font-size:13.5px;color:var(--ink-2)}
 
 /* ---------- Team ---------- */
-.team{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
 .member{background:var(--surface);border-radius:var(--r-card);padding:0 0 26px;box-shadow:var(--sh-card);
   overflow:hidden;transition:transform .2s var(--ease),box-shadow .2s;display:flex;flex-direction:column}
 .member:hover{transform:translateY(-3px);box-shadow:var(--sh-float)}
