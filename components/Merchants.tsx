@@ -37,7 +37,7 @@ export default function Merchants({ tillAvatar }: { tillAvatar: string }) {
               <li><span className="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12.5l5.2 5.2L20 7"/></svg></span>
                 <span><b>Earn as an agent.</b> Take cash claims and onboard neighbours for a share of every transaction.</span></li>
             </ul>
-            <a className="btn btn-navy" style={{marginTop: "32px"}} href="/app/#/m/home">Open the merchant demo</a>
+            <a className="btn btn-navy" style={{marginTop: "32px"}} href="/app#/m/home">Open the merchant demo</a>
           </div>
         </div>
       </section>

@@ -18,7 +18,7 @@ export default function SiteFooter() {
             </div>
             <div className="col"><h5>Product</h5>
               <a href="#how">How it works</a><a href="#security">Security</a>
-              <a href="/app/">Customer demo</a><a href="/app/#/m/home">Merchant demo</a></div>
+              <a href="/app">Customer demo</a><a href="/app#/m/home">Merchant demo</a></div>
             <div className="col"><h5>Company</h5>
               <a href="#progress">Progress</a>
               <a href="https://www.linkedin.com/in/casaipay-ltd-24384a409" target="_blank" rel="noopener">LinkedIn</a>

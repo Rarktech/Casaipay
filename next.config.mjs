@@ -2,15 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  // The prototype in /public/app is a plain static app whose assets are
-  // referenced relatively (css/app.css, js/store.js). Serving it at "/app"
-  // would resolve those to "/css/..." and 404, so "/app" redirects to the
-  // directory form "/app/" where the relative paths are correct.
+  // The prototype in /public/app is a plain static app. Its assets are now
+  // referenced absolutely (/app/css/..., /app/js/...), so it renders correctly
+  // whether the URL carries a trailing slash or not. "/app" is rewritten to the
+  // index rather than redirected: a redirect to "/app/" fights Next's default
+  // trailing-slash normalisation and produces a redirect loop.
+  async rewrites() {
+    return [{ source: '/app', destination: '/app/index.html' }];
+  },
   async redirects() {
     return [
-      { source: '/app', destination: '/app/', permanent: false },
-      { source: '/demo', destination: '/app/', permanent: false },
-      { source: '/merchant', destination: '/app/#/m/home', permanent: false },
+      { source: '/demo', destination: '/app', permanent: false },
+      { source: '/merchant', destination: '/app#/m/home', permanent: false },
     ];
   },
 };

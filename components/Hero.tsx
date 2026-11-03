@@ -14,7 +14,7 @@ export default function Hero({ mockAvatar }: { mockAvatar: string }) {
             <h1 style={{marginTop: "22px"}}>Your face<br />is your<br /><span className="navy-t">account.</span></h1>
             <p className="lead">Millions of Nigerians are locked out of digital money because it assumes a smartphone, an account number and a signal. CASAIPAY replaces all three with the one thing everybody already has.</p>
             <div className="actions">
-              <a className="btn btn-gold" href="/app/">
+              <a className="btn btn-gold" href="/app">
                 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3M4 12h16"/></svg>
                 Try the live demo
@@ -46,7 +46,7 @@ export default function Hero({ mockAvatar }: { mockAvatar: string }) {
               <div className="screen">
                 {live ? (
                   <iframe
-                    src="/app/#/u/home"
+                    src="/app#/u/home"
                     title="CASAIPAY interactive prototype"
                     allow="camera; clipboard-write"
                   />

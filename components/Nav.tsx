@@ -61,7 +61,7 @@ export default function Nav() {
             <a className="btn sm btn-white" href={WHATSAPP} target="_blank" rel="noopener">
               WhatsApp
             </a>
-            <a className="btn sm btn-gold primary" href="/app/">
+            <a className="btn sm btn-gold primary" href="/app">
               Try the demo
             </a>
           </div>
@@ -88,7 +88,7 @@ export default function Nav() {
         <a href={WHATSAPP} target="_blank" rel="noopener" onClick={() => setOpen(false)}>
           WhatsApp us
         </a>
-        <a href="/app/" onClick={() => setOpen(false)}>
+        <a href="/app" onClick={() => setOpen(false)}>
           Try the demo
         </a>
       </div>
