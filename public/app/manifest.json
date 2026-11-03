@@ -1,0 +1,13 @@
+{
+  "name": "CASAIPAY",
+  "short_name": "CASAIPAY",
+  "description": "Send online. Claim offline. Powered by identity.",
+  "start_url": "./app.html",
+  "display": "standalone",
+  "background_color": "#F7F6F3",
+  "theme_color": "#0A1F44",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
